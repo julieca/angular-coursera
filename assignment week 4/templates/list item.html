@@ -1,0 +1,8 @@
+<table>
+	<tr ng-repeat="item in $ctrl.items">
+		<td>{{item.id}}</td> 
+		<td>{{item.name}}</td> 
+		<td>{{item.short_name}}</td>
+		<td><a ui-sref="itemData({shortName : item.short_name })">details</a></td>
+	</tr>
+</table>
